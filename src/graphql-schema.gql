@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Product {
+  _id: ID!
+  name: String!
+  description: String!
+  price: Float!
+}
+
+type Query {
+  getProduct: [Product!]!
+}
+
+type Mutation {
+  createTenant(input: TenantInput!): String!
+}
+
+input TenantInput {
+  accountName: String!
+  tenantId: String!
+}
